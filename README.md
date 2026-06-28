@@ -2,12 +2,12 @@
 
 This is a part of [Node3D](https://github.com/node-3d) project.
 
-[![NPM](https://badge.fury.io/js/deps-bullet-raub.svg)](https://badge.fury.io/js/deps-bullet-raub)
-[![ESLint](https://github.com/node-3d/deps-bullet-raub/actions/workflows/eslint.yml/badge.svg)](https://github.com/node-3d/deps-bullet-raub/actions/workflows/eslint.yml)
-[![Test](https://github.com/node-3d/deps-bullet-raub/actions/workflows/test.yml/badge.svg)](https://github.com/node-3d/deps-bullet-raub/actions/workflows/test.yml)
+[![NPM](https://badge.fury.io/js/%40node-3d%2Fdeps-bullet.svg)](https://badge.fury.io/js/@node-3d/deps-bullet)
+[![Lint](https://github.com/node-3d/deps-bullet/actions/workflows/lint.yml/badge.svg)](https://github.com/node-3d/deps-bullet/actions/workflows/lint.yml)
+[![Test](https://github.com/node-3d/deps-bullet/actions/workflows/test.yml/badge.svg)](https://github.com/node-3d/deps-bullet/actions/workflows/test.yml)
 
 ```console
-npm i -s deps-bullet-raub
+npm install @node-3d/deps-bullet
 ```
 
 This dependency package is distributing **Bullet Physics**
@@ -21,7 +21,7 @@ See the official
 [Bullet3 manual](https://github.com/bulletphysics/bullet3/blob/master/docs/Bullet_User_Manual.pdf)
 and [examples](https://github.com/bulletphysics/bullet3/tree/master/examples).
 
-See [bullet-raub](https://github.com/node-3d/bullet-raub/tree/master/src) for
+See [@node-3d/bullet](https://github.com/node-3d/bullet/tree/master/src/cpp) for
 how the libraries may be used in a Node.js addon.
 
 

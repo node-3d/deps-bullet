@@ -1,10 +1,9 @@
-'use strict';
-
-const path = require('node:path');
+import fs from 'node:fs/promises';
+import path from 'node:path';
 
 const {
-	getBin, ensuredir, copyall,
-} = require('addon-tools-raub');
+	getBin, ensuredir,
+} = await import('@node-3d/addon-tools');
 
 
 const bin = getBin();
@@ -17,12 +16,10 @@ const fail = (error) => {
 };
 
 
-(async () => {
-	try {
-		await ensuredir(binPath);
-		
-		await copyall(path.resolve('src/build'), binPath);
-	} catch (error) {
-		fail(error);
-	}
-})();
+try {
+	await ensuredir(binPath);
+	
+	await fs.cp(path.resolve('src/build'), binPath, { recursive: true });
+} catch (error) {
+	fail(error);
+}
