@@ -10,10 +10,10 @@ This is a part of [Node3D](https://github.com/node-3d) project.
 npm install @node-3d/deps-bullet
 ```
 
-This dependency package is distributing **Bullet Physics**
-binaries through **NPM** for **Node.js** addons.
+This dependency package distributes **Bullet Physics**
+binaries through **npm** for **Node.js** addons.
 
-* Platforms (x64): Windows, Linux, MacOS ARM, Linux ARM.
+* Platforms: Windows x64, Linux x64, Linux ARM64, macOS ARM64.
 * Library: Bullet physics, see list below.
 * Linking: static lib-type (PIC/MD).
 
@@ -47,7 +47,7 @@ Python and Robotics libs are **NOT** included, only C++/CL simulation related st
 This software uses [Bullet3](http://bulletphysics.org/wordpress/).
 Bullet3 is legally used under the ZLIB license.
 It is explicitly stated that Bullet3 can be used commercially in closed-source projects.
-A copy of Bullet3 license is [included](/BULLET_ZLIB),
+A copy of the Bullet3 license is [included](BULLET_ZLIB),
 and can also be found at the
 [official repository](https://github.com/bulletphysics/bullet3/blob/master/LICENSE.txt).
 
