@@ -10,18 +10,7 @@ This is a part of [Node3D](https://github.com/node-3d) project.
 npm install @node-3d/deps-bullet
 ```
 
-## Binary Origin
 
-Release archives are built by this repository's public GitHub Actions workflows.
-
-Attestations: https://github.com/node-3d/deps-bullet/attestations
-
-To verify a downloaded archive:
-
-```bash
-gh release download <tag> -R node-3d/deps-bullet -p <platform>.gz
-gh attestation verify <platform>.gz -R node-3d/deps-bullet
-```
 
 This dependency package distributes **Bullet Physics**
 binaries and headers through **npm** for **Node.js** addons.
@@ -66,3 +55,16 @@ and can also be found at the
 
 No changes to the original content of any Bullet source file were made. No claims are made that
 any physics algorithms are changed/invented within this repository.
+
+## Binary Origin
+
+Release archives are built by this repository's public GitHub Actions workflows.
+
+Attestations: https://github.com/node-3d/deps-bullet/attestations
+
+To verify a downloaded archive:
+
+```bash
+gh release download <tag> -R node-3d/deps-bullet -p <platform>.gz
+gh attestation verify <platform>.gz -R node-3d/deps-bullet
+```
