@@ -1,8 +1,16 @@
+set -euo pipefail
+
+toolset_args=()
+if [[ -n "${CMAKE_TOOLSET:-}" ]]; then
+	toolset_args=(-T "$CMAKE_TOOLSET")
+fi
+
 (
 	cd src/bullet3/build
 	
-	cmake -A "${BUILD_PLATFORM:-x64}" -T v142 \
+	cmake -A "${BUILD_PLATFORM:-x64}" "${toolset_args[@]}" \
 		-DCMAKE_POLICY_DEFAULT_CMP0091=NEW \
+		-DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
 		-DCMAKE_MSVC_RUNTIME_LIBRARY="MultiThreadedDLL" \
 		-DCMAKE_BUILD_TYPE=Release \
 		-DBUILD_BULLET2_DEMOS=OFF \

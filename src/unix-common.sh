@@ -1,8 +1,11 @@
+set -euo pipefail
+
 (
 	cd src/bullet3/build
 	
 	cmake \
 		${CMAKE_ARGS:-} \
+		-DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
 		-DCMAKE_POSITION_INDEPENDENT_CODE=ON \
 		-DCMAKE_BUILD_TYPE=Release \
 		-DBUILD_BULLET2_DEMOS=OFF \

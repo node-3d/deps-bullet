@@ -66,6 +66,7 @@ jobs:
             os: windows-2022
             node_arch: x64
             build_platform: x64
+            cmake_toolset: v142
           - target: windows-arm64
             os: windows-11-vs2026-arm
             node_arch: arm64
@@ -131,6 +132,7 @@ jobs:
         run: src/windows.sh
         env:
           BUILD_PLATFORM: ${{ matrix.build_platform }}
+          CMAKE_TOOLSET: ${{ matrix.cmake_toolset || '' }}
 
       - name: Build Post Step
         run: node src/build-post
