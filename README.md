@@ -15,7 +15,7 @@ npm install @node-3d/deps-bullet
 This dependency package distributes **Bullet Physics**
 binaries and headers through **npm** for **Node.js** addons.
 
-* Platforms: Windows x64, Linux x64/ARM64, macOS ARM64.
+* Platforms: Windows x64/ARM64, Linux x64/ARM64, macOS x64/ARM64.
 * Library: Bullet physics, see list below.
 * Linking: static lib-type (PIC/MD).
 

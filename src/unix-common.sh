@@ -2,6 +2,7 @@
 	cd src/bullet3/build
 	
 	cmake \
+		${CMAKE_ARGS:-} \
 		-DCMAKE_POSITION_INDEPENDENT_CODE=ON \
 		-DCMAKE_BUILD_TYPE=Release \
 		-DBUILD_BULLET2_DEMOS=OFF \

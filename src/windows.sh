@@ -1,7 +1,7 @@
 (
 	cd src/bullet3/build
 	
-	cmake -A x64 -T v142 \
+	cmake -A "${BUILD_PLATFORM:-x64}" -T v142 \
 		-DCMAKE_POLICY_DEFAULT_CMP0091=NEW \
 		-DCMAKE_MSVC_RUNTIME_LIBRARY="MultiThreadedDLL" \
 		-DCMAKE_BUILD_TYPE=Release \
