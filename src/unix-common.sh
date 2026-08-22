@@ -1,4 +1,4 @@
-set -euo pipefail
+set -eu
 
 (
 	cd src/bullet3/build
