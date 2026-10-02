@@ -1,7 +1,7 @@
 {
 	"author": "Luis Blanco <luisblanco1337@gmail.com>",
 	"name": "@node-3d/deps-bullet",
-	"version": "5.0.1",
+	"version": "5.0.2",
 	"description": "Binaries and headers for Bullet-dependent compilation",
 	"license": "MIT",
 	"main": "index.js",
