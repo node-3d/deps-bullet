@@ -1,5 +1,10 @@
 set -eu
 
+if [ "$(uname -s)" = "Darwin" ]; then
+	export MACOSX_DEPLOYMENT_TARGET=13.5
+	CMAKE_ARGS="${CMAKE_ARGS:-} -DCMAKE_OSX_DEPLOYMENT_TARGET=13.5"
+fi
+
 (
 	cd src/bullet3/build
 	
